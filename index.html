@@ -5,49 +5,56 @@
     <meta charset="utf-8">
     <title>WebStudio</title>
     <!--normalizer styling-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--my styling-->
     <link rel="styleSheet" href="/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container disp-flex-nav">
+     <div class="container header-container">
         <a class="lnk lnk-page logo" href="./index.html">
             WebStudio
         </a>
 
-        <nav class="disp-flex-flex">
-            <ul class="listed-items disp-flex-nav">
-                <li>
-                    <a class="lnk lnk-page" href="./index.html">Studio</a>
+        <nav class="header-container">
+            
+            <ul class="listed-items header-nav-list">
+                <li class="header-nav-item">
+                    <a class="lnk lnk-page header-nav-link" href="./index.html">Studio</a>
                 </li>
-                <li>
-                    <a class="lnk lnk-page" href="./portfolio.html">Portfolio</a>
+                <li class="header-nav-item">
+                    <a class="lnk lnk-page header-nav-link" href="./portfolio.html">Portfolio</a>
                 </li>
-                <li>
-                    <a class="lnk lnk-page" href="#">Contacts</a>
+                <li class="header-nav-item">
+                    <a class="lnk lnk-page header-nav-link" href="#">Contacts</a>
                 </li>
             </ul>
+            
         
-        
-        <ul class="listed-items disp-flex-flex">
-            <li>
-                <a class="lnk lnk-reach-top tel-lnk" href="tel:+12127724150">+1 212-772-4150</a>
-            </li>
-            <li>
-                <a class="lnk lnk-reach-top mail-lnk" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-        </ul>
-        </div>
+       
+            <ul class="listed-items header-contacts">
+                <li class="header-contact-item">
+                <a class="lnk lnk-reach-top tel-lnk header-contact-link" href="tel:+12127724150">+1 212-772-4150</a>
+                </li>
+                <li class="header-contact-item">
+                    <a class="lnk lnk-reach-top mail-lnk header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </nav>
+     </div>
     </header>
     <main>
         <section class="bars title-bar">
-            <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUISNESS</h1>
+            <div class="container">
+            <h1 class="title">EFFECTIVE SOLUTIONS FOR <br> YOUR BUISNESS</h1>
             <button class="button button-index" type="button">Request our service</button>
+            </div>
         </section>
         <section>
-            <div class="second-index-container">
+            <div class="container sub-title-margin">
             <ul class="listed-items disp-flex">
                 <li>
                     <h3 class="features">ATTENTION TO DETAILS</h3>
@@ -76,16 +83,16 @@
             </div>
         </section>
     <section>
-        <div class="third-index-container">
+        <div class="container wwd-margin">
             <h2 class="titles">What We Do</h2>
             <ul class="listed-items disp-flex">
-                <li class="list-item-margin">
+                <li>
                     <img src="/goit-images/box1.jpg" alt="Coding Using a Tablet" width="370" height="294">
                 </li>
-                <li class="list-item-margin">
+                <li class=>
                     <img src="/goit-images/box2.jpg" alt="Using Innovative Technology" width="370" height="294">
                 </li>
-                <li class="list-item-margin">
+                <li class=>
                     <img src="/goit-images/box3.jpg" alt="Utilizing a color pallete to enhance Designs"  width="370" height="294">
                 </li>
             </ul>
@@ -93,28 +100,28 @@
     </section>
     
         <section class="team-sect">
-            <div class="fourth-index-container">
+            <div class="container">
             <h2 class="titles">Our Team</h2>
             <ul class="listed-items disp-flex">
-                <li class="list-item-margin">
+                <li class="lst-item">
                     <img src="/goit-images/img1.jpg" alt="Picture of Christopher Walker" width="280" height="250">
                     <h3 class="names">Christopher Walker</h3>
                     <p class="roles">Product Designer</p>
                 </li>
                 
-                <li class="list-item-margin">
+                <li class="lst-item">
                     <img src="/goit-images/img2.jpg" alt="Picture of Kylie Evans" width="280" height="250">
                     <h3 class="names">Kylie Evans</h3>
                     <p class="roles">Frontend Developer</p>
                 </li>
                 
-                <li class="list-item-margin">
+                <li class="lst-item">
                     <img src="/goit-images/img3.jpg" alt="Picture of Rayan Harris" width="280" height="250">
                     <h3 class="names">Rayan Harris</h3>
                     <p class="roles">Marketing</p>
                 </li>
                 
-                <li class="list-item-margin">
+                <li class="lst-item">
                     <img src="/goit-images/img4.jpg" alt="Picture of Tyler Moore" width="280" height="250">
                     <h3 class="names">Tyler Moore</h3>
                     <p class="roles">UI Designer</p>
@@ -126,6 +133,7 @@
 
     </main>
     <footer class="bars bottom-bar">
+        <div class="container">
         <a class="lnk lnk-page logo" href="./index.html">
             WebStudio
         </a>
@@ -142,6 +150,7 @@
                 <a class="lnk lnk-reach-bottom" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
         </ul>
+        </div>
     </footer>
 </body>
 
