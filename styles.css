@@ -126,6 +126,8 @@ ul {
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 .button-portfolio {
@@ -134,6 +136,10 @@ ul {
     padding-right: 26px;
     padding-bottom: 6px;
     padding-left: 26px;
+    margin-top: 94px;
+    margin-right: 8px;
+    margin-bottom: 34px;
+    
 }
 
 .button {
@@ -142,8 +148,6 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     letter-spacing: 0.06em;
-    margin: 0 auto;
-    display: block;
 }
 
 .button:hover {
@@ -203,11 +207,9 @@ ul {
     font-weight: 400;
     letter-spacing: 0.03em;
 }
-.portfolio-button-list {
+.portfolio-button-list:not(:last-child) {
     display: flex;
-    gap: 8px;
-    margin: 0 auto;
-    display: block;
+    justify-content: center;
 }
 .portfolio-button-margin {
     padding-top: 32px;
@@ -228,6 +230,11 @@ ul {
 .disp-flex{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-card-margin{
+    margin-bottom: 94px;
 }
 
 .header-container{
